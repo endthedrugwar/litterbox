@@ -1,0 +1,22 @@
+{
+    "version": "9.28.9",
+    "description": "Dave Coffin's dcraw",
+    "homepage": "https://github.com/ncruces/dcraw",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ncruces/dcraw/releases/download/v9.28.9-win/dcraw-windows.zip",
+            "hash": "25400a47649b5cd1305b959fbf40cd98bdd2cae051124bbe3e8e46a891a2994b"
+        }
+    },
+    "bin": "dcraw.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ncruces/dcraw/releases/download/v$version/dcraw-windows.zip"
+            }
+        }
+    }
+}
+
