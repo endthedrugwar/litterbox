@@ -1,0 +1,25 @@
+{
+    "version": "4.2.0",
+    "description": "DM Disk Editor and Data Recovery Software",
+    "homepage": "https://dmde.com/",
+    "license": "DMDE EULA",
+    "url": "https://dmde.com/download/dmde-4-2-0-814-win64-gui.zip",
+    "hash": "45e143536496a93361dffb993169506673ca0a6162f6b60a63bb38a5f9c1fff0",
+    "innosetup": false,
+    "bin": [
+	    "dmde.exe"
+    ],
+    "shortcuts": [
+	    [ "dmde.exe", "dmde" ]
+    ],
+    "checkver": {
+        "github": "https://dmde.com/download.html"
+    },
+    "autoupdate": {
+        "url": "https://dmde.com/download/dmde",
+        "hash": {
+            "url": "https://github.com/marticliment/UniGetUI/releases/tag/$version",
+            "regex": "sha256: <code>$sha256</code>"
+        }
+    }
+}
